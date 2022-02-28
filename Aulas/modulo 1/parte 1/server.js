@@ -25,13 +25,12 @@ for (let i = 0; i <= numero; i++) {
 }
 
 //retorno de numeros mutiplos de 3 e 5
-console.log("mutiplos de 3 e 5")
-console.log(mutiplos);
+console.log("mutiplos de 3 e 5", mutiplos)
+
 
 //retorno de numeros pares
-console.log("numéros pares")
-console.log(par);
+console.log("numéros pares", par)
+
 
 //retorno de numeros impares
-console.log("numéros impares")
-console.log(impar);
+console.log("numéros impares", impar)
