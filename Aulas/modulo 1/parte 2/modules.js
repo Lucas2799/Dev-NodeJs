@@ -18,7 +18,7 @@ function mutiplicacao(a, b) {
 function divisao(a, b) {
     return a / b;
 }
-var texto = "teste exportação"
+var texto = "teste exportaï¿½ï¿½o"
 
 
     //loop para numeros multiplos de 3
@@ -29,4 +29,4 @@ var texto = "teste exportação"
     }
 
 //exportando modulo e seus objetos 
-module.exports = { soma, subtracao, mutiplicacao, divisao, texto, mutiplos };
+export default { soma, subtracao, mutiplicacao, divisao, texto, mutiplos };
