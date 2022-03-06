@@ -1,0 +1,2 @@
+-COMANDO PARA CRIAR UM PROJETO
+	npm init -y 

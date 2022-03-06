@@ -1,4 +1,4 @@
-const numero = 1000;
+const numero = 100;
 const mutiplos = [];
 const par = [];
 const impar = [];
