@@ -15,6 +15,6 @@ function mutiplicacao(a, b) {
 function divisao(a, b) {
     return a / b;
 }
-
+var texto = "teste exportação"
 //exportando modulo e seus objetos 
-module.exports = { soma, subtracao, mutiplicacao, divisao };
+module.exports = { soma, subtracao, mutiplicacao, divisao, texto };
