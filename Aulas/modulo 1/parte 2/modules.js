@@ -1,3 +1,6 @@
+const numero = 100;
+const mutiplos = [];
+
 function soma(a, b) {
     return a + b;
 }
@@ -16,5 +19,14 @@ function divisao(a, b) {
     return a / b;
 }
 var texto = "teste exportação"
+
+
+    //loop para numeros multiplos de 3
+    for (let i = 0; i < numero; i++) {
+        if (i % 3 === 0) {
+            mutiplos.push(i);
+        }
+    }
+
 //exportando modulo e seus objetos 
-module.exports = { soma, subtracao, mutiplicacao, divisao, texto };
+module.exports = { soma, subtracao, mutiplicacao, divisao, texto, mutiplos };
