@@ -6,6 +6,11 @@ async function AllPedidos() {
     return await PedidosRepository.AllPedidos();
 }
 
+async function GetById(){
+    return await PedidosRepository.GetById();
+}
+
 export default{
-    AllPedidos
+    AllPedidos,
+    GetById
 }

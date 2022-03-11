@@ -92,6 +92,7 @@ async function listaMaisModelos(x){
         }
     }
 
+    //metodo 'sort' ordena o aray
     brands = brands.sort(await sortOrder("brandName"));
     brands = brands.sort(await sortOrder("modelQuantity"));
 

@@ -6,8 +6,12 @@ async function AllPedidos(req, res, next) {
     } catch (err) {
         next(err);
     }
-}
+};
 
+async function GetById(res,next){
+res.send({"mostModels": await pedidosServices.GetById()});
+}
 export default{
-    AllPedidos
+    AllPedidos,
+    GetById
 }

@@ -5,6 +5,7 @@ const router = express.Router();
 router.use(express.json());
 
 router.get("/AllPedidos", PedidosController.AllPedidos);
+router.get("/GetById/:id", PedidosController.GetById)
 
 router.use((err, req, res, next) => {
     console.log(err);
