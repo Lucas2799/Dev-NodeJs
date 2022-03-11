@@ -1,4 +1,4 @@
-import PedidosService from "../services/Pedidos.service.js"
+import PedidosService from "../services/pedidos.service.js"
 
 async function AllPedidos(req, res, next) {
     try {

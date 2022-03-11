@@ -1,10 +1,10 @@
 import express from "express";
-import PedidosController from "../controllers/Pedidos.controller.js"
+import PedidosController from "../controllers/pedidos.controller.js"
 
 const router = express.Router();
 router.use(express.json());
 
-router.get("/allPedidos", PedidosController.AllPedidos);
+router.get("/AllPedidos", PedidosController.AllPedidos);
 
 router.use((err, req, res, next) => {
     console.log(err);

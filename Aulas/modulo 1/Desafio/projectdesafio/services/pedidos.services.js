@@ -1,4 +1,4 @@
-import PedidosRepository from "../repositories/Pedidos.repository.js";
+import PedidosRepository from "../repositories/pedidos.repository.js";
 import { promises as fs } from "fs";
 const { readFile } = fs;
 
