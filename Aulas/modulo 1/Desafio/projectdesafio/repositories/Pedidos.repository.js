@@ -10,10 +10,7 @@ async function AllPedidos() {
 //retornos de pedidos por id
 async function GetById(id){
     const data = await AllPedidos();
-    //let id = [];
     console.log(id);
-
-    
 
     for (let i = 0; i < data.length; i++) {
         if (data[i] != null){

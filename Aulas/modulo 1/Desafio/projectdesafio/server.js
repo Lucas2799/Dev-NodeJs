@@ -13,7 +13,7 @@ global.fileName = "pedidos.json"
 app.listen(8080, async ()=> {
     try{
         await readFile (fileName);
-        console.log("server online");
+        console.log("server online na porta : 8080");
     }catch(err){
         console.log(err);
     }

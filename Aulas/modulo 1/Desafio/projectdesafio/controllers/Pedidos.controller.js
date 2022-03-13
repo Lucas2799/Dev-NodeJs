@@ -8,8 +8,12 @@ async function AllPedidos(req, res, next) {
     }
 };
 
-async function GetById(res,next){
-res.send({"mostModels": await pedidosServices.GetById()});
+async function GetById(req, res,next){
+    try{
+    res.send({"mostModels": await pedidosServices.GetById(req.parms.id)});
+    }catch(err){
+        next(err);
+    }
 }
 export default{
     AllPedidos,
