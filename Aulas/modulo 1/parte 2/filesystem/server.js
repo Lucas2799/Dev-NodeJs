@@ -4,6 +4,12 @@ fs.writeFile("teste.txt", "tete", function(err){
     if (err){
         console.log(err);
     }else{
-        console.log("Arquivo escrito com sucesso!")
+        fs.readFile("teste.txt", function(err, data){
+         if (err){
+            console.log(err);
+         }else{
+            console.log(data);
+         }
+        })
     }
 })
