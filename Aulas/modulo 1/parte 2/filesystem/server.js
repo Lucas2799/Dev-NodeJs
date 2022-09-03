@@ -4,7 +4,7 @@ fs.writeFile("teste.txt", "tete", function(err){//criação de arquivo com nome 
     if (err){
         console.log(err);//retorno caso erro
     }else{
-        fs.appendFile("teste.txt", " concatenado 1", function (err){ //concatenação de escrita 
+        fs.appendFile("teste.txt", " teste apend file", function (err){ //concatenação de escrita 
             if(err){
                 console.log(err);
             }else{
