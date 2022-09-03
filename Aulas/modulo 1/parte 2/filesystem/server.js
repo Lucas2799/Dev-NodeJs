@@ -4,7 +4,7 @@ fs.writeFile("teste.txt", "tete", function(err){
     if (err){
         console.log(err);
     }else{
-        fs.readFile("teste.txt", function(err, data){
+        fs.readFile("teste.txt", "utf-8", function(err, data){
          if (err){
             console.log(err);
          }else{
