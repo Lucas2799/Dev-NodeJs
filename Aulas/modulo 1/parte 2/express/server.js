@@ -11,5 +11,10 @@ app.get("/teste?",(req,res)=>{
     res.send("Teste pontuação em rota ")
 })
 
+//Ao usar o ponto de + na rota o servidor aceita a repetição de ifitos do mesmo para a resposta 
+app.get("/teste+",(req,res)=>{
+    res.send("Teste pontuação em rota ")
+})
+
 app.listen(3000,()=>
 console.log("API Started") );
