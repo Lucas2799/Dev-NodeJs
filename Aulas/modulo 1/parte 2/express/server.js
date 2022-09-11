@@ -34,6 +34,10 @@ app.get(/.*bonito$/, (req, res)=>{
     res.send(req.path + " | expressão regular");
 });
 
+//Parametros via Query
+app.get("/oi?", (req, res)=>{
+    res.send(req.query);
+});
 
 app.listen(3000,()=>
 console.log("API Started") );
