@@ -29,5 +29,11 @@ app.get("/teste/:id",(req,res)=>{
     res.send(req.params.id);
 });
 
+//uso de expressão regular .*____$
+app.get(/.*bonito$/, (req, res)=>{
+    res.send(req.path + " | expressão regular");
+});
+
+
 app.listen(3000,()=>
 console.log("API Started") );
