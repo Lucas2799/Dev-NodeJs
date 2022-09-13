@@ -39,5 +39,14 @@ app.get("/oi?", (req, res)=>{
     res.send(req.query);
 });
 
+//Parametro next
+app.get("/mutiplehandlers",(req, res, next)=>{
+    console.log("Callback 1");
+    next();
+},(req,res)=>{
+    console.log("Callback 2");
+    res.end();//function end encerra o processamento de callback
+});
+
 app.listen(3000,()=>
 console.log("API Started") );
