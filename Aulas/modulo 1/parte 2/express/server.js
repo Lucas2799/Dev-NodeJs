@@ -48,5 +48,23 @@ app.get("/mutiplehandlers",(req, res, next)=>{
     res.end();//function end encerra o processamento de callback
 });
 
+const callback1 =(req, res, next)=>{
+    console.log("callback 1")
+    next();
+};
+
+function callback2 (req,res,next){
+    console.log("callback 2")
+    next();
+};
+
+const callback3 = (req,res)=>{
+    console.log("callback 3")
+    res.end();
+};
+
+app.get("/testemutiplehandlersarray",[callback1,callback2,callback3]);
+
+
 app.listen(3000,()=>
 console.log("API Started") );
