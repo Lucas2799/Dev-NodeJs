@@ -65,6 +65,16 @@ const callback3 = (req,res)=>{
 
 app.get("/testemutiplehandlersarray",[callback1,callback2,callback3]);
 
+//tratamento de erro na porta de entrarda
+app.get("/",(req, res)=>{
+    throw new Error("Erro, mensagem de teste!");
+});
+
+//tratamento de erro na porta de entrarda
+app.use((err,req,res,next)=>{
+    console.log("Error 1" );
+    res.status(500).send("Ocorreu um erro ")
+})
 
 app.listen(3000,()=>
 console.log("API Started") );
